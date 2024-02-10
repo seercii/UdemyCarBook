@@ -1,0 +1,11 @@
+﻿@model List< ResultSocialMediaDto>
+
+
+    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+    @foreach(var item in Model)
+    {
+        <li class="ftco-animate"><a href="@item.Url"><span class="@item.Icon"></span></a></li>
+    }
+
+    </ul>
+

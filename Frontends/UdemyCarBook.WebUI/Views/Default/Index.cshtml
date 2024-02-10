@@ -1,0 +1,121 @@
+﻿@model ResultLocationDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<style>
+    #drop option{
+        color:black;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+    @await Component.InvokeAsync("_HeadUILayoutComponentPartial")
+<body>
+
+    @await Component.InvokeAsync("_NavbarUILayoutComponentPartial")
+
+
+    @await Component.InvokeAsync("_DefaultCoverUILayoutComponentPartial")
+
+
+    <section class="ftco-section ftco-no-pt bg-light">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-12	featured-top">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <form method="post" class="request-form ftco-animate bg-primary">
+                                <h2>Aracınızı Şimdi Kiralayın</h2>
+                                <div class="form-group">
+                                    <label for="" class="label">Alış Lokasyonu</label>
+                                    @Html.DropDownListFor(x=>x.LocationID,(List<SelectListItem>)ViewBag.v,new {@class="form-control",@id="drop"})
+                                </div>
+                                <div class="d-flex">
+                                    <div class="form-group mr-2">
+                                        <label for="" class="label">Alış Tarih</label>
+                                        <input type="text" class="form-control" name="book_pick_date" id="book_pick_date" placeholder="Tarih Seçiniz">
+                                    </div>
+                                    <div class="form-group ml-2">
+                                        <label for="" class="label">İade Tarihi</label>
+                                        <input type="text" class="form-control" name="book_off_date" id="book_off_date" placeholder="Tarih Seçiniz">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="label">Alış Saati</label>
+                                    <input type="text" class="form-control" name="time_pick" id="time_pick" placeholder="Saat Seçiniz">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="label">İade Saati</label>
+                                    <input type="text" class="form-control" name="time_off" id="time_off" placeholder="Saat Seçiniz">
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-secondary py-3 px-4">Uygun Araçları Listele</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center">
+                            <div class="services-wrap rounded-right w-100">
+                                <h3 class="heading-section mb-4">Araç Kiralamanın En Basit Yolu</h3>
+                                <div class="row d-flex mb-4">
+                                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                        <div class="services w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-route"></span></div>
+                                            <div class="text w-100">
+                                                <h3 class="heading mb-2">Almak İstediğin Konumu Seç</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                        <div class="services w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-handshake"></span></div>
+                                            <div class="text w-100">
+                                                <h3 class="heading mb-2">En Uygun Araçları Gör</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                                        <div class="services w-100 text-center">
+                                            <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-rent"></span></div>
+                                            <div class="text w-100">
+                                                <h3 class="heading mb-2">Kiralamayı Tamamla, hepsi bu!</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><a href="/CarPricing/Index" class="btn btn-primary py-3 px-4">Araç Fiyat Listemizi Görün</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    @await Component.InvokeAsync("_DefaultLast5CarsWithBrandsComponentPartial")
+
+
+    @await Component.InvokeAsync("_AboutUsComponentPartial")
+
+
+    @await Component.InvokeAsync("_ServiceComponentPartial")
+
+
+    @await Component.InvokeAsync("_BecomeADriverComponentPartial")
+
+
+    @await Component.InvokeAsync("_TestimonialComponentPartial")
+
+
+    @await Component.InvokeAsync("_GetLast3BlogsWithAuthorsListComponentPartial")
+
+
+    @await Component.InvokeAsync("_DefaultStatisticsComponentPartial")
+
+
+    @await Component.InvokeAsync("_FooterUILayoutComponentPartial")
+
+
+    @await Component.InvokeAsync("_ScriptUILayoutComponentPartial")
+
+</body>
+</html>

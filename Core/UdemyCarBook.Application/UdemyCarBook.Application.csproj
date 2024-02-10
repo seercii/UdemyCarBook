@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net8.0\UdemyCarBook.Application.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net8.0\UdemyCarBook.Application.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Debug\net8.0\UdemyCarBook.Application.deps.json" />
+    <Content Include="obj\Debug\net8.0\UdemyCarBook.Application.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\UdemyCarBook.Application.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net8.0\UdemyCarBook.Application.dll" />
+    <None Include="bin\Debug\net8.0\UdemyCarBook.Application.pdb" />
+    <None Include="bin\Debug\net8.0\UdemyCarBook.Domain.dll" />
+    <None Include="bin\Debug\net8.0\UdemyCarBook.Domain.pdb" />
+    <None Include="obj\Debug\net8.0\refint\UdemyCarBook.Application.dll" />
+    <None Include="obj\Debug\net8.0\ref\UdemyCarBook.Application.dll" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.assets.cache" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.csproj.CopyComplete" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.dll" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net8.0\UdemyCarBook.Application.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\UdemyCarBook.Application.csproj.nuget.g.props" />
+    <None Include="obj\UdemyCarBook.Application.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UdemyCarBook.Domain\UdemyCarBook.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>

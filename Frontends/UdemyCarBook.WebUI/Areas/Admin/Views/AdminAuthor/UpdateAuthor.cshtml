@@ -1,0 +1,44 @@
+﻿@model UpdateAuthorDto
+@{
+    ViewData["Title"] = "UpdateAuthor";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="page-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Yazar Güncelleme Sayfası</h4>
+                        <p class="card-subtitle mb-4">Yazar ile ilgili temel bilgileri eksiksiz doldurmanız önemlidir. Veri girişlerinden sonra kaydet butonuna tıklayarak güncelleme işlemini tamamlayabilirsiniz.</p>
+                        <form method="post">
+                            <input type="hidden" asp-for="AuthorID" />
+                            <div class="form-group">
+                                <label for="exampleInputName">Ad-Soyad</label>
+                                <input type="text" class="form-control" id="exampleInputName" asp-for="Name" placeholder="Yazar Adını Giriniz">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputDescription">Açıklama</label>
+                                <input type="text" class="form-control" id="exampleInputDescription" asp-for="Description" placeholder="Açıklama Girişi Yapınız">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputimageUrl">Yazar Görseli</label>
+                                <input type="text" class="form-control" id="exampleInputimageUrl" asp-for="ImageUrl" placeholder="Yazar Görseli Girişi Yapınız">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary waves-effect waves-light">Yazarı Kaydet</button>
+                        </form>
+
+                    </div> <!-- end card-body-->
+                </div>
+
+            </div>
+            <!-- end card-body-->
+        </div>
+        <!-- end card -->
+
+    </div>
+    <!-- end col -->
+
+</div>
