@@ -20,11 +20,11 @@ namespace UdemyCarBook.Persistence.Repositories.CarPricingRepositories
             _context = context;
         }
 
-        public List<CarPricing> GetCarPricingWithCars()
-        {
-            var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z=>z.PricingID==2).ToList();
-            return values;
-        }
+		public List<CarPricing> GetCarPricingWithCars()
+		{
+			var values = _context.CarPricings.Include(x => x.Car).ThenInclude(y => y.Brand).Include(x => x.Pricing).Where(z => z.PricingID == 2).ToList();
+			return values;
+		}
 
 		public List<CarPricing> GetCarPricingWithTimePeriod()
 		{
@@ -36,7 +36,7 @@ namespace UdemyCarBook.Persistence.Repositories.CarPricingRepositories
 			List<CarPricingViewModel> values = new List<CarPricingViewModel>();
 			using (var command = _context.Database.GetDbConnection().CreateCommand())
 			{
-				command.CommandText = "SELECT * FROM (SELECT Cars.CarID, Model,Name,CoverImageUrl,PricingID,Amount FROM CarPricings INNER JOIN Cars ON Cars.CarID = CarPricings.CarId INNER JOIN Brands ON Brands.BrandID = Cars.BrandID) AS SourceTable PIVOT (SUM(Amount) FOR PricingID IN ([3], [5], [7])) AS PivotTable;\r\n";
+				command.CommandText = "Select * From (Select Model,Name,CoverImageUrl,PricingID,Amount From CarPricings Inner Join Cars On Cars.CarID=CarPricings.CarId Inner Join Brands On Brands.BrandID=Cars.BrandID) As SourceTable Pivot (Sum(Amount) For PricingID In ([1],[2],[3])) as PivotTable;";
 				command.CommandType = System.Data.CommandType.Text;
 				_context.Database.OpenConnection();
 				using (var reader = command.ExecuteReader())
@@ -45,15 +45,14 @@ namespace UdemyCarBook.Persistence.Repositories.CarPricingRepositories
 					{
 						CarPricingViewModel carPricingViewModel = new CarPricingViewModel()
 						{
-							CarId = reader.GetInt32(0),
 							Brand = reader["Name"].ToString(),
 							Model = reader["Model"].ToString(),
 							CoverImageUrl = reader["CoverImageUrl"].ToString(),
 							Amounts = new List<decimal>
 							{
-								Convert.ToDecimal(reader["3"]),
-								Convert.ToDecimal(reader["5"]),
-								Convert.ToDecimal(reader["7"])
+								Convert.ToDecimal(reader["1"]),
+								Convert.ToDecimal(reader["2"]),
+								Convert.ToDecimal(reader["3"])
 							}
 						};
 						values.Add(carPricingViewModel);

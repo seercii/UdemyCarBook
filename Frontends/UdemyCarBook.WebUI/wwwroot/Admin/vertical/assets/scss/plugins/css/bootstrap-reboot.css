@@ -14,7 +14,7 @@
 
 html {
   font-family: sans-serif;
-  line-height: 1.15;
+  line-height: 1.13;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -28,8 +28,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  line-height: 1.3;
+  color: #212329;
   text-align: left;
   background-color: #fff;
 }
@@ -45,9 +45,9 @@ hr {
   overflow: visible;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h3, h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 p {
@@ -90,7 +90,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: .3rem;
   margin-left: 0;
 }
 
@@ -110,17 +110,17 @@ small {
 sub,
 sup {
   position: relative;
-  font-size: 75%;
+  font-size: 73%;
   line-height: 0;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -.25em;
+  bottom: -.23em;
 }
 
 sup {
-  top: -.5em;
+  top: -.3em;
 }
 
 a {
@@ -130,7 +130,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: #0036b3;
   text-decoration: underline;
 }
 
@@ -181,9 +181,9 @@ table {
 }
 
 caption {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  color: #6c757d;
+  padding-top: 0.73rem;
+  padding-bottom: 0.73rem;
+  color: #6c737d;
   text-align: left;
   caption-side: bottom;
 }
@@ -194,7 +194,7 @@ th {
 
 label {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 button {
@@ -203,7 +203,7 @@ button {
 
 button:focus {
   outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 3px auto -webkit-focus-ring-color;
 }
 
 input,
@@ -284,8 +284,8 @@ legend {
   width: 100%;
   max-width: 100%;
   padding: 0;
-  margin-bottom: .5rem;
-  font-size: 1.5rem;
+  margin-bottom: .3rem;
+  font-size: 1.3rem;
   line-height: inherit;
   color: inherit;
   white-space: normal;

@@ -71,7 +71,7 @@ namespace UdemyCarBook.WebUI.Areas.Admin.Controllers
 
             #region İstatistik5
             var responseMessage5 = await client.GetAsync("https://localhost:7160/api/Statistics/GetBrandCount");
-            if (responseMessage5.IsSuccessStatusCode)
+            if (responseMessage3.IsSuccessStatusCode)
             {
                 int brandCountRandom = random.Next(0, 101);
                 var jsonData5 = await responseMessage5.Content.ReadAsStringAsync();

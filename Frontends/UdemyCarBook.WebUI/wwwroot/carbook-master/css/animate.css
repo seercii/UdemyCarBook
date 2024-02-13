@@ -4,7 +4,7 @@
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Copyright (c) 2015 Daniel Eden
+Copyright (c) 2013 Daniel Eden
 */
 
 .animated {
@@ -20,8 +20,8 @@ Copyright (c) 2015 Daniel Eden
   animation-fill-mode: both;
 }
 .ftco-animated {
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -38,36 +38,36 @@ Copyright (c) 2015 Daniel Eden
 
 .animated.bounceIn,
 .animated.bounceOut {
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
+  -webkit-animation-duration: .73s;
+  animation-duration: .73s;
 }
 
 .animated.flipOutX,
 .animated.flipOutY {
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s;
+  -webkit-animation-duration: .73s;
+  animation-duration: .73s;
 }
 
 @-webkit-keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 20%, 33%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
 
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    -webkit-transform: translate3d(0, -13px, 0);
+    transform: translate3d(0, -13px, 0);
   }
 
   90% {
@@ -77,25 +77,25 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 20%, 33%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
 
   40%, 43% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
     -webkit-transform: translate3d(0, -30px, 0);
     transform: translate3d(0, -30px, 0);
   }
 
   70% {
-    -webkit-animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    -webkit-transform: translate3d(0, -15px, 0);
-    transform: translate3d(0, -15px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    animation-timing-function: cubic-bezier(0.733, 0.030, 0.833, 0.060);
+    -webkit-transform: translate3d(0, -13px, 0);
+    transform: translate3d(0, -13px, 0);
   }
 
   90% {
@@ -112,21 +112,21 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes flash {
-  from, 50%, to {
+  from, 30%, to {
     opacity: 1;
   }
 
-  25%, 75% {
+  23%, 73% {
     opacity: 0;
   }
 }
 
 @keyframes flash {
-  from, 50%, to {
+  from, 30%, to {
     opacity: 1;
   }
 
-  25%, 75% {
+  23%, 73% {
     opacity: 0;
   }
 }
@@ -144,9 +144,9 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(1, 1, 1);
   }
 
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+  30% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
   }
 
   to {
@@ -161,9 +161,9 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(1, 1, 1);
   }
 
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+  30% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
   }
 
   to {
@@ -184,28 +184,28 @@ Copyright (c) 2015 Daniel Eden
   }
 
   30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(1.23, 0.73, 1);
+    transform: scale3d(1.23, 0.73, 1);
   }
 
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.73, 1.23, 1);
+    transform: scale3d(0.73, 1.23, 1);
   }
 
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+  30% {
+    -webkit-transform: scale3d(1.13, 0.83, 1);
+    transform: scale3d(1.13, 0.83, 1);
   }
 
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
+  63% {
+    -webkit-transform: scale3d(.93, 1.03, 1);
+    transform: scale3d(.93, 1.03, 1);
   }
 
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
+  73% {
+    -webkit-transform: scale3d(1.03, .93, 1);
+    transform: scale3d(1.03, .93, 1);
   }
 
   to {
@@ -221,28 +221,28 @@ Copyright (c) 2015 Daniel Eden
   }
 
   30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
+    -webkit-transform: scale3d(1.23, 0.73, 1);
+    transform: scale3d(1.23, 0.73, 1);
   }
 
   40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
+    -webkit-transform: scale3d(0.73, 1.23, 1);
+    transform: scale3d(0.73, 1.23, 1);
   }
 
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
+  30% {
+    -webkit-transform: scale3d(1.13, 0.83, 1);
+    transform: scale3d(1.13, 0.83, 1);
   }
 
-  65% {
-    -webkit-transform: scale3d(.95, 1.05, 1);
-    transform: scale3d(.95, 1.05, 1);
+  63% {
+    -webkit-transform: scale3d(.93, 1.03, 1);
+    transform: scale3d(.93, 1.03, 1);
   }
 
-  75% {
-    -webkit-transform: scale3d(1.05, .95, 1);
-    transform: scale3d(1.05, .95, 1);
+  73% {
+    -webkit-transform: scale3d(1.03, .93, 1);
+    transform: scale3d(1.03, .93, 1);
   }
 
   to {
@@ -262,7 +262,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, 0, 0);
   }
 
-  10%, 30%, 50%, 70%, 90% {
+  10%, 30%, 30%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
@@ -279,7 +279,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, 0, 0);
   }
 
-  10%, 30%, 50%, 70%, 90% {
+  10%, 30%, 30%, 70%, 90% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
@@ -297,8 +297,8 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
+    -webkit-transform: rotate3d(0, 0, 1, 13deg);
+    transform: rotate3d(0, 0, 1, 13deg);
   }
 
   40% {
@@ -307,13 +307,13 @@ Copyright (c) 2015 Daniel Eden
   }
 
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
+    -webkit-transform: rotate3d(0, 0, 1, 3deg);
+    transform: rotate3d(0, 0, 1, 3deg);
   }
 
   80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
+    -webkit-transform: rotate3d(0, 0, 1, -3deg);
+    transform: rotate3d(0, 0, 1, -3deg);
   }
 
   to {
@@ -324,8 +324,8 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
-    transform: rotate3d(0, 0, 1, 15deg);
+    -webkit-transform: rotate3d(0, 0, 1, 13deg);
+    transform: rotate3d(0, 0, 1, 13deg);
   }
 
   40% {
@@ -334,13 +334,13 @@ Copyright (c) 2015 Daniel Eden
   }
 
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
-    transform: rotate3d(0, 0, 1, 5deg);
+    -webkit-transform: rotate3d(0, 0, 1, 3deg);
+    transform: rotate3d(0, 0, 1, 3deg);
   }
 
   80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
-    transform: rotate3d(0, 0, 1, -5deg);
+    -webkit-transform: rotate3d(0, 0, 1, -3deg);
+    transform: rotate3d(0, 0, 1, -3deg);
   }
 
   to {
@@ -367,7 +367,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
   }
 
-  30%, 50%, 70%, 90% {
+  30%, 30%, 70%, 90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
@@ -394,7 +394,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
   }
 
-  30%, 50%, 70%, 90% {
+  30%, 30%, 70%, 90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
@@ -423,9 +423,9 @@ Copyright (c) 2015 Daniel Eden
     transform: none;
   }
 
-  15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  13% {
+    -webkit-transform: translate3d(-23%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-23%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
 
   30% {
@@ -433,9 +433,9 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
 
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  43% {
+    -webkit-transform: translate3d(-13%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-13%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
 
   60% {
@@ -443,9 +443,9 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
   }
 
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  73% {
+    -webkit-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -1deg);
   }
 
   to {
@@ -460,9 +460,9 @@ Copyright (c) 2015 Daniel Eden
     transform: none;
   }
 
-  15% {
-    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
-    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  13% {
+    -webkit-transform: translate3d(-23%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-23%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
 
   30% {
@@ -470,9 +470,9 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
 
-  45% {
-    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
-    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  43% {
+    -webkit-transform: translate3d(-13%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-13%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
 
   60% {
@@ -480,9 +480,9 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
   }
 
-  75% {
-    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
-    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  73% {
+    -webkit-transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-3%, 0, 0) rotate3d(0, 0, 1, -1deg);
   }
 
   to {
@@ -503,38 +503,38 @@ Copyright (c) 2015 Daniel Eden
   }
 
   22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
+    -webkit-transform: skewX(-12.3deg) skewY(-12.3deg);
+    transform: skewX(-12.3deg) skewY(-12.3deg);
   }
 
   33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
+    -webkit-transform: skewX(6.23deg) skewY(6.23deg);
+    transform: skewX(6.23deg) skewY(6.23deg);
   }
 
   44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
+    -webkit-transform: skewX(-3.123deg) skewY(-3.123deg);
+    transform: skewX(-3.123deg) skewY(-3.123deg);
   }
 
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
+  33.3% {
+    -webkit-transform: skewX(1.3623deg) skewY(1.3623deg);
+    transform: skewX(1.3623deg) skewY(1.3623deg);
   }
 
   66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    -webkit-transform: skewX(-0.78123deg) skewY(-0.78123deg);
+    transform: skewX(-0.78123deg) skewY(-0.78123deg);
   }
 
   77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
+    -webkit-transform: skewX(0.390623deg) skewY(0.390623deg);
+    transform: skewX(0.390623deg) skewY(0.390623deg);
   }
 
   88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    -webkit-transform: skewX(-0.1933123deg) skewY(-0.1933123deg);
+    transform: skewX(-0.1933123deg) skewY(-0.1933123deg);
   }
 }
 
@@ -545,38 +545,38 @@ Copyright (c) 2015 Daniel Eden
   }
 
   22.2% {
-    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
+    -webkit-transform: skewX(-12.3deg) skewY(-12.3deg);
+    transform: skewX(-12.3deg) skewY(-12.3deg);
   }
 
   33.3% {
-    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
+    -webkit-transform: skewX(6.23deg) skewY(6.23deg);
+    transform: skewX(6.23deg) skewY(6.23deg);
   }
 
   44.4% {
-    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
+    -webkit-transform: skewX(-3.123deg) skewY(-3.123deg);
+    transform: skewX(-3.123deg) skewY(-3.123deg);
   }
 
-  55.5% {
-    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
+  33.3% {
+    -webkit-transform: skewX(1.3623deg) skewY(1.3623deg);
+    transform: skewX(1.3623deg) skewY(1.3623deg);
   }
 
   66.6% {
-    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    -webkit-transform: skewX(-0.78123deg) skewY(-0.78123deg);
+    transform: skewX(-0.78123deg) skewY(-0.78123deg);
   }
 
   77.7% {
-    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
-    transform: skewX(0.390625deg) skewY(0.390625deg);
+    -webkit-transform: skewX(0.390623deg) skewY(0.390623deg);
+    transform: skewX(0.390623deg) skewY(0.390623deg);
   }
 
   88.8% {
-    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
-    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    -webkit-transform: skewX(-0.1933123deg) skewY(-0.1933123deg);
+    transform: skewX(-0.1933123deg) skewY(-0.1933123deg);
   }
 }
 
@@ -589,8 +589,8 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -629,8 +629,8 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -673,9 +673,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes bounceInDown {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -686,18 +686,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+    -webkit-transform: translate3d(0, 23px, 0);
+    transform: translate3d(0, 23px, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 3px, 0);
   }
 
   to {
@@ -707,9 +707,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @keyframes bounceInDown {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -720,18 +720,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+    -webkit-transform: translate3d(0, 23px, 0);
+    transform: translate3d(0, 23px, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+    -webkit-transform: translate3d(0, 3px, 0);
+    transform: translate3d(0, 3px, 0);
   }
 
   to {
@@ -746,9 +746,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -759,18 +759,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(23px, 0, 0);
+    transform: translate3d(23px, 0, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
   }
 
   to {
@@ -780,9 +780,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @keyframes bounceInLeft {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   0% {
@@ -793,18 +793,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(25px, 0, 0);
-    transform: translate3d(25px, 0, 0);
+    -webkit-transform: translate3d(23px, 0, 0);
+    transform: translate3d(23px, 0, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(5px, 0, 0);
-    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
   }
 
   to {
@@ -819,9 +819,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   from {
@@ -832,18 +832,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
+    -webkit-transform: translate3d(-23px, 0, 0);
+    transform: translate3d(-23px, 0, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
   }
 
   to {
@@ -853,9 +853,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   from {
@@ -866,18 +866,18 @@ Copyright (c) 2015 Daniel Eden
 
   60% {
     opacity: 1;
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
+    -webkit-transform: translate3d(-23px, 0, 0);
+    transform: translate3d(-23px, 0, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
   }
 
   to {
@@ -892,9 +892,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @-webkit-keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   from {
@@ -909,14 +909,14 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, -20px, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
   }
 
   to {
@@ -926,9 +926,9 @@ Copyright (c) 2015 Daniel Eden
 }
 
 @keyframes bounceInUp {
-  from, 60%, 75%, 90%, to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  from, 60%, 73%, 90%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
+    animation-timing-function: cubic-bezier(0.213, 0.610, 0.333, 1.000);
   }
 
   from {
@@ -943,14 +943,14 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, -20px, 0);
   }
 
-  75% {
+  73% {
     -webkit-transform: translate3d(0, 10px, 0);
     transform: translate3d(0, 10px, 0);
   }
 
   90% {
-    -webkit-transform: translate3d(0, -5px, 0);
-    transform: translate3d(0, -5px, 0);
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
   }
 
   to {
@@ -970,7 +970,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.9, .9, .9);
   }
 
-  50%, 55% {
+  30%, 33% {
     opacity: 1;
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1);
@@ -989,7 +989,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.9, .9, .9);
   }
 
-  50%, 55% {
+  30%, 33% {
     opacity: 1;
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
     transform: scale3d(1.1, 1.1, 1.1);
@@ -1013,7 +1013,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, 10px, 0);
   }
 
-  40%, 45% {
+  40%, 43% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
@@ -1032,7 +1032,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, 10px, 0);
   }
 
-  40%, 45% {
+  40%, 43% {
     opacity: 1;
     -webkit-transform: translate3d(0, -20px, 0);
     transform: translate3d(0, -20px, 0);
@@ -1122,7 +1122,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, -10px, 0);
   }
 
-  40%, 45% {
+  40%, 43% {
     opacity: 1;
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0);
@@ -1141,7 +1141,7 @@ Copyright (c) 2015 Daniel Eden
     transform: translate3d(0, -10px, 0);
   }
 
-  40%, 45% {
+  40%, 43% {
     opacity: 1;
     -webkit-transform: translate3d(0, 20px, 0);
     transform: translate3d(0, 20px, 0);
@@ -1163,9 +1163,9 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    -ms-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -ms-transform: scale(0.93);
+    -webkit-transform: scale(0.93);
+    transform: scale(0.93);
   }
 
   to {
@@ -1181,9 +1181,9 @@ Copyright (c) 2015 Daniel Eden
   from {
     opacity: 0;
     visibility: hidden;
-    -ms-transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    transform: scale(0.95);
+    -ms-transform: scale(0.93);
+    -webkit-transform: scale(0.93);
+    transform: scale(0.93);
   }
 
   to {
@@ -1206,8 +1206,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
   }
 
   to {
@@ -1224,8 +1224,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);*/
-    -webkit-transform: translate3d(0, -50px, 0);
-    transform: translate3d(0, -50px, 0);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
   }
 
   to {
@@ -1280,8 +1280,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
   }
 
   to {
@@ -1298,8 +1298,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);*/
-    -webkit-transform: translate3d(-50px, 0, 0);
-    transform: translate3d(-50px, 0, 0);
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
   }
 
   to {
@@ -1354,8 +1354,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(30px, 0, 0);
+    transform: translate3d(30px, 0, 0);
   }
 
   to {
@@ -1372,8 +1372,8 @@ Copyright (c) 2015 Daniel Eden
     visibility: hidden;
     /*-webkit-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0);*/
-    -webkit-transform: translate3d(50px, 0, 0);
-    transform: translate3d(50px, 0, 0);
+    -webkit-transform: translate3d(30px, 0, 0);
+    transform: translate3d(30px, 0, 0);
   }
 
   to {
@@ -1807,22 +1807,22 @@ Copyright (c) 2015 Daniel Eden
   }
 
   40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
-  50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  30% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
-    transform: perspective(400px) scale3d(.95, .95, .95);
+    -webkit-transform: perspective(400px) scale3d(.93, .93, .93);
+    transform: perspective(400px) scale3d(.93, .93, .93);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
@@ -1844,22 +1844,22 @@ Copyright (c) 2015 Daniel Eden
   }
 
   40% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
 
-  50% {
-    -webkit-transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
-    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+  30% {
+    -webkit-transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) translate3d(0, 0, 130px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   80% {
-    -webkit-transform: perspective(400px) scale3d(.95, .95, .95);
-    transform: perspective(400px) scale3d(.95, .95, .95);
+    -webkit-transform: perspective(400px) scale3d(.93, .93, .93);
+    transform: perspective(400px) scale3d(.93, .93, .93);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
@@ -1902,8 +1902,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
   }
 
   to {
@@ -1935,8 +1935,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -3deg);
   }
 
   to {
@@ -1975,8 +1975,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -3deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -3deg);
   }
 
   to {
@@ -2008,8 +2008,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -3deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -3deg);
   }
 
   to {
@@ -2077,8 +2077,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -13deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -13deg);
     opacity: 1;
   }
 
@@ -2096,8 +2096,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   30% {
-    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
-    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -13deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -13deg);
     opacity: 1;
   }
 
@@ -2129,8 +2129,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
+    -webkit-transform: skewX(-3deg);
+    transform: skewX(-3deg);
     opacity: 1;
   }
 
@@ -2155,8 +2155,8 @@ Copyright (c) 2015 Daniel Eden
   }
 
   80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
+    -webkit-transform: skewX(-3deg);
+    transform: skewX(-3deg);
     opacity: 1;
   }
 
@@ -2250,8 +2250,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 
@@ -2268,8 +2268,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 
@@ -2291,8 +2291,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 
@@ -2309,8 +2309,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 
@@ -2332,8 +2332,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 
@@ -2350,8 +2350,8 @@ Copyright (c) 2015 Daniel Eden
   from {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 
@@ -2457,8 +2457,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 }
@@ -2473,8 +2473,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, 45deg);
-    transform: rotate3d(0, 0, 1, 45deg);
+    -webkit-transform: rotate3d(0, 0, 1, 43deg);
+    transform: rotate3d(0, 0, 1, 43deg);
     opacity: 0;
   }
 }
@@ -2494,8 +2494,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 }
@@ -2510,8 +2510,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: right bottom;
     transform-origin: right bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 }
@@ -2531,8 +2531,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 }
@@ -2547,8 +2547,8 @@ Copyright (c) 2015 Daniel Eden
   to {
     -webkit-transform-origin: left bottom;
     transform-origin: left bottom;
-    -webkit-transform: rotate3d(0, 0, 1, -45deg);
-    transform: rotate3d(0, 0, 1, -45deg);
+    -webkit-transform: rotate3d(0, 0, 1, -43deg);
+    transform: rotate3d(0, 0, 1, -43deg);
     opacity: 0;
   }
 }
@@ -2741,7 +2741,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  30% {
     opacity: 1;
   }
 }
@@ -2753,7 +2753,7 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.3, .3, .3);
   }
 
-  50% {
+  30% {
     opacity: 1;
   }
 }
@@ -2768,16 +2768,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2786,16 +2786,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2809,16 +2809,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(10px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2827,16 +2827,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(10px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2850,16 +2850,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(-10px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2868,16 +2868,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
     transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(-10px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(-10px, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2891,16 +2891,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2909,16 +2909,16 @@ Copyright (c) 2015 Daniel Eden
     opacity: 0;
     -webkit-transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
     transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -2932,7 +2932,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
   }
 
-  50% {
+  30% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     transform: scale3d(.3, .3, .3);
@@ -2948,7 +2948,7 @@ Copyright (c) 2015 Daniel Eden
     opacity: 1;
   }
 
-  50% {
+  30% {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);
     transform: scale3d(.3, .3, .3);
@@ -2967,10 +2967,10 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomOutDown {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   to {
@@ -2979,18 +2979,18 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
 @keyframes zoomOutDown {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   to {
@@ -2999,8 +2999,8 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
@@ -3012,8 +3012,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(42px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(42px, 0, 0);
   }
 
   to {
@@ -3028,8 +3028,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(42px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(42px, 0, 0);
   }
 
   to {
@@ -3049,8 +3049,8 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomOutRight {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(-42px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(-42px, 0, 0);
   }
 
   to {
@@ -3065,8 +3065,8 @@ Copyright (c) 2015 Daniel Eden
 @keyframes zoomOutRight {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
-    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(-42px, 0, 0);
+    transform: scale3d(.473, .473, .473) translate3d(-42px, 0, 0);
   }
 
   to {
@@ -3086,10 +3086,10 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomOutUp {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   to {
@@ -3098,18 +3098,18 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
 @keyframes zoomOutUp {
   40% {
     opacity: 1;
-    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    -webkit-animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    -webkit-transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    transform: scale3d(.473, .473, .473) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
+    animation-timing-function: cubic-bezier(0.330, 0.033, 0.673, 0.190);
   }
 
   to {
@@ -3118,8 +3118,8 @@ Copyright (c) 2015 Daniel Eden
     transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
     -webkit-transform-origin: center bottom;
     transform-origin: center bottom;
-    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    -webkit-animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.173, 0.883, 0.320, 1);
   }
 }
 
