@@ -8,22 +8,23 @@ using UdemyCarBook.Application.Features.CQRS.Queries.CarQueries;
 using UdemyCarBook.Application.Features.CQRS.Results.BrandResults;
 using UdemyCarBook.Application.Features.CQRS.Results.CarResults;
 using UdemyCarBook.Application.Interfaces;
+using UdemyCarBook.Application.Interfaces.CarInterfaces;
 using UdemyCarBook.Domain.Entities;
 
 namespace UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers
 {
     public class GetCarByIdQueryHandler
     {
-        private readonly IRepository<Car> _repository;
+        private readonly ICarRepository _repository;
 
-        public GetCarByIdQueryHandler(IRepository<Car> repository)
+        public GetCarByIdQueryHandler(ICarRepository repository)
         {
             _repository = repository;
         }
 
         public async Task<GetCarByIdQueryResult> Handle(GetCarByIdQuery query)
         {
-            var values = await _repository.GetByIdAsync(query.Id);
+            var values =  _repository.GetCarByIdWithBrand(query.Id);
             return new GetCarByIdQueryResult
             {
                 BrandID = values.BrandID,
@@ -36,7 +37,9 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers
                 Model = values.Model,
                 Seat = values.Seat,
                 Transmission = values.Transmission,
-                BrandName=values.Brand.Name
+                BrandName = values.Brand.Name
+              
+
             };
         }
     }
