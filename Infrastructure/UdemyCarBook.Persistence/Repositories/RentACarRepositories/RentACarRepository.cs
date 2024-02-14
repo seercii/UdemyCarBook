@@ -22,7 +22,8 @@ namespace UdemyCarBook.Persistence.Repositories.RentACarRepositories
 
         public async Task< List<RentACar>> GetByFilterAsync(Expression<Func<RentACar, bool>> filter)
         {
-            var values= await _context.RentACars.Where(filter).Include(x=>x.Car).ThenInclude(y=>y.Brand).ToListAsync();
+            var values= await _context.RentACars.Where(filter).Include(x=>x.Car).ThenInclude(y => y.Brand).Include(x => x.Car.CarPricings)
+               .Where(x => x.Car.CarPricings.Any(cp => cp.PricingID == 1)).ToListAsync();
             return values;
         }
     }

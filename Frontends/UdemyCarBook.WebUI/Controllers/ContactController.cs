@@ -17,7 +17,9 @@ namespace UdemyCarBook.WebUI.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            return View();
+			ViewBag.v1 = "İletişim";
+			ViewBag.v2 = "Bize Ulaşın";
+			return View();
         }
 
         [HttpPost]

@@ -34,7 +34,8 @@ namespace UdemyCarBook.Application.Features.CQRS.Handlers.CarHandlers
                 Luggage = x.Luggage,
                 Model = x.Model,
                 Seat = x.Seat,
-                Transmission = x.Transmission
+                Transmission = x.Transmission,
+                Amount = x.CarPricings.FirstOrDefault(cp => cp.PricingID == 1)?.Amount ?? 0,
             }).ToList();
         }
     }
