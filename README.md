@@ -27,6 +27,6 @@
 
 ![Görseller](https://i.hizliresim.com/2jll93f.png)
 
-![Görseller](]https://i.hizliresim.com/rh1y76h.png)
+![Görseller](https://i.hizliresim.com/rh1y76h.png)
 
 ![Görseller](https://i.hizliresim.com/i3h7or0.png)
