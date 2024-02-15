@@ -7,4 +7,4 @@
 - Projenin güvenliği açısından Json Web Token kullandık ve yetkisiz rol erişiminin önüne geçtik.
 - SignalR, Fluent Validation, SQL Pivot tablolar, Core içinde Adonet kullanımı, JWT Bearer yönetimi, Design Pattern'lar hakkında daha çok bilgi kazanmış oldum.
 
-![Görseller]([url=https://hizliresim.com/91ra804][img]https://i.hizliresim.com/91ra804.png[/img][/url]) 
+![Görseller](https://i.hizliresim.com/91ra804.png)
